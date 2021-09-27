@@ -3,7 +3,7 @@ package com.development.task1.service;
 import com.development.task1.entity.CustomNumber;
 
 public class NumberOperation {
-    public NumberOperation(){
+    public NumberOperation() {
 
     }
 

@@ -12,7 +12,7 @@ public class NumberExtraction {
     private static final String number = "[0-9]+";
     private static final Logger logger = LogManager.getLogger(CustomNumber.class.getSimpleName());
 
-    public NumberExtraction(){
+    public NumberExtraction() {
     }
 
     public CustomNumber[] getFromFile() {
@@ -29,14 +29,14 @@ public class NumberExtraction {
         }
     }
 
-    public CustomNumber[] checkData(String data){
+    public CustomNumber[] checkData(String data) {
         String[] values = data.split("/");
-        if(values.length == 0){
+        if (values.length == 0) {
             return new CustomNumber[0];
         }
         CustomNumber[] customNumbers = new CustomNumber[values.length];
         int flag = 0;
-        for(String value: values) {
+        for (String value : values) {
             if (!value.matches(number)) {
                 return new CustomNumber[0];
             } else {

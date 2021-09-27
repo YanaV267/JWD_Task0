@@ -3,7 +3,7 @@ package com.development.task1.entity;
 public class CustomNumber {
     private int value;
 
-    public CustomNumber(){
+    public CustomNumber() {
 
     }
 
@@ -11,7 +11,7 @@ public class CustomNumber {
         this.value = value;
     }
 
-    public CustomNumber(String value){
+    public CustomNumber(String value) {
         this.value = Integer.parseInt(value);
     }
 
