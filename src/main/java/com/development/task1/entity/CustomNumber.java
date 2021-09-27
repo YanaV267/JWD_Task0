@@ -1,42 +1,28 @@
 package com.development.task1.entity;
 
-public class CustomNumber {
-    private int value;
+public abstract class CustomNumber {
+    private NumberType type;
 
-    public CustomNumber() {
-
+    public NumberType getType() {
+        return type;
     }
 
-    public CustomNumber(int value) {
-        this.value = value;
-    }
-
-    public CustomNumber(String value) {
-        this.value = Integer.parseInt(value);
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
+    public void setType(NumberType type) {
+        this.type = type;
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (o == null || getClass() != o.getClass())
-            return false;
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
         CustomNumber that = (CustomNumber) o;
-        return value == that.value;
+        return type == that.type;
     }
 
     @Override
     public int hashCode() {
         int result = 1;
-        result = result * 31 + value;
+        result = result * 31 + type.hashCode();
         return result;
     }
 
@@ -44,7 +30,7 @@ public class CustomNumber {
     public String toString() {
         Class<?> currentClass = this.getClass();
         return currentClass.getSimpleName() + "{" +
-                "value=" + value +
+                "type=" + type +
                 '}';
     }
 }

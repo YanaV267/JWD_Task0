@@ -2,3 +2,58 @@
 [INFO ] 2021-09-27 19:47:30.632 [main]   CustomNumber - второе значение = 12
 [INFO ] 2021-09-27 19:47:30.635 [main]   CustomNumber - извлечение чисел из файла прошло успешно
 [INFO ] 2021-09-27 19:47:30.635 [main]   CustomNumber - тест умножения чисел прошёл успешно
+[INFO ] 2021-09-27 20:44:01.930 [main]   CustomNumber - первое значение = 18
+[INFO ] 2021-09-27 20:44:01.945 [main]   CustomNumber - второе значение = 0
+[INFO ] 2021-09-27 20:44:53.015 [main]   CustomNumber - первое значение = 18
+[INFO ] 2021-09-27 20:44:53.041 [main]   CustomNumber - второе значение = 0
+[INFO ] 2021-09-27 20:47:23.073 [main]   CustomNumber - первое значение = 18
+[INFO ] 2021-09-27 20:47:23.093 [main]   CustomNumber - второе значение = 0
+[INFO ] 2021-09-27 20:47:23.103 [main]   CustomNumber - извлечение чисел из файла прошло успешно
+[ERROR] 2021-09-27 20:47:23.108 [main]   CustomNumber - среди чисел для деления есть ноль - запрещённая операция
+[ERROR] 2021-09-27 21:36:18.994 [main]   CustomIntegerNumber - неверный формат данных
+[ERROR] 2021-09-27 21:36:19.014 [main]   CustomIntegerNumber - неверный формат полученных данных
+[ERROR] 2021-09-27 21:36:19.015 [main]   CustomNumber - нет данных для обработки
+[ERROR] 2021-09-27 21:37:19.817 [main]   CustomIntegerNumber - неверный формат данных
+[ERROR] 2021-09-27 21:37:19.827 [main]   CustomIntegerNumber - неверный формат полученных данных
+[ERROR] 2021-09-27 21:37:19.828 [main]   CustomNumber - нет данных для обработки
+[ERROR] 2021-09-27 21:38:07.528 [main]   CustomIntegerNumber - неверный формат данных
+[ERROR] 2021-09-27 21:38:07.553 [main]   CustomIntegerNumber - неверный формат полученных данных
+[ERROR] 2021-09-27 21:38:07.556 [main]   CustomNumber - нет данных для обработки
+[ERROR] 2021-09-27 21:42:59.629 [main]   CustomIntegerNumber - неверный формат данных
+[ERROR] 2021-09-27 21:42:59.643 [main]   CustomIntegerNumber - неверный формат полученных данных
+[ERROR] 2021-09-27 21:42:59.644 [main]   CustomNumber - нет данных для обработки
+[INFO ] 2021-09-27 21:45:09.141 [main]   CustomNumber - первое число - 18.0
+[INFO ] 2021-09-27 21:45:09.168 [main]   CustomNumber - второе число - 0.6
+[INFO ] 2021-09-27 21:45:09.173 [main]   CustomNumber - извлечение чисел из файла прошло успешно
+[INFO ] 2021-09-27 21:46:38.841 [main]   CustomIntegerNumber - 0.6
+[INFO ] 2021-09-27 21:46:38.860 [main]   CustomNumber - первое число - 18.0
+[INFO ] 2021-09-27 21:46:38.863 [main]   CustomNumber - второе число - 0.6
+[INFO ] 2021-09-27 21:46:38.871 [main]   CustomNumber - извлечение чисел из файла прошло успешно
+[INFO ] 2021-09-27 21:48:51.835 [main]   CustomNumber - первое число - 18.0
+[INFO ] 2021-09-27 21:48:51.847 [main]   CustomNumber - второе число - 0.6
+[INFO ] 2021-09-27 21:48:51.851 [main]   CustomNumber - извлечение чисел из файла прошло успешно
+[INFO ] 2021-09-27 21:50:05.794 [main]   CustomNumber - int
+[INFO ] 2021-09-27 21:50:05.810 [main]   CustomNumber - первое число - 18.0
+[INFO ] 2021-09-27 21:50:05.812 [main]   CustomNumber - do
+[INFO ] 2021-09-27 21:50:05.814 [main]   CustomNumber - второе число - 0.6
+[INFO ] 2021-09-27 21:50:05.816 [main]   CustomNumber - int
+[INFO ] 2021-09-27 21:50:05.821 [main]   CustomNumber - извлечение чисел из файла прошло успешно
+[INFO ] 2021-09-27 21:50:05.824 [main]   CustomNumber - int
+[INFO ] 2021-09-27 21:50:05.825 [main]   CustomNumber - do
+[INFO ] 2021-09-27 21:50:05.826 [main]   CustomNumber - do
+[INFO ] 2021-09-27 21:52:21.990 [main]   CustomNumber - первое число - 18.0
+[INFO ] 2021-09-27 21:52:22.008 [main]   CustomNumber - второе число - 12.0
+[INFO ] 2021-09-27 21:52:22.014 [main]   CustomNumber - извлечение чисел из файла прошло успешно
+[INFO ] 2021-09-27 21:52:22.017 [main]   CustomNumber - тест сложения чисел прошёл успешно
+[INFO ] 2021-09-27 21:52:49.475 [main]   CustomNumber - первое число - 18.0
+[INFO ] 2021-09-27 21:52:49.489 [main]   CustomNumber - второе число - 12.0
+[INFO ] 2021-09-27 21:52:49.497 [main]   CustomNumber - извлечение чисел из файла прошло успешно
+[ERROR] 2021-09-27 21:53:08.687 [main]   CustomNumber - неверный формат данных
+[ERROR] 2021-09-27 21:53:08.702 [main]   CustomNumber - неверный формат полученных данных
+[ERROR] 2021-09-27 21:53:08.703 [main]   CustomNumber - нет данных для обработки
+[ERROR] 2021-09-27 21:55:12.149 [main]   CustomNumber - неверный формат данных
+[ERROR] 2021-09-27 21:55:12.161 [main]   CustomNumber - неверный формат полученных данных
+[ERROR] 2021-09-27 21:55:12.161 [main]   CustomNumber - нет данных для обработки
+[ERROR] 2021-09-27 21:55:12.162 [main]   CustomNumber - неверный формат данных
+[ERROR] 2021-09-27 21:55:12.163 [main]   CustomNumber - неверный формат полученных данных
+[ERROR] 2021-09-27 21:55:12.164 [main]   CustomNumber - нет данных для обработки
