@@ -36,7 +36,7 @@ public class TestCustomNumber {
     public void testSubtraction(){
         testExtractingNumbers();
         Assert.assertEquals(numberOperation.subtraction(customNumbers), 6);
-        logger.error("тест вычитания из первого числа остальных чисел прошёл успешно");
+        logger.info("тест вычитания из первого числа остальных чисел прошёл успешно");
     }
 
     @Test
