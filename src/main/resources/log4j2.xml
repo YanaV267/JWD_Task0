@@ -5,14 +5,14 @@
         <Property name="archive">${log-path}/archive</Property>
     </Properties>
     <Appenders>
-        <Console name="Console-Appender" target="SYSTEM_OUT">
+        <Console name="console" target="SYSTEM_OUT">
             <PatternLayout>
                 <pattern>
                     [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t]   %c{1} - %msg%n
                 </pattern>>
             </PatternLayout>
         </Console>
-        <File name="File-Appender" fileName="${log-path}/logFile.log" >
+        <File name="file" fileName="${log-path}/logFile.log" >
             <PatternLayout>
                 <pattern>
                     [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t]   %c{1} - %msg%n
@@ -22,8 +22,8 @@
     </Appenders>
     <Loggers>
         <Root level="all">
-            <AppenderRef ref="Console-Appender"/>
-            <AppenderRef ref="File-Appender" level="all"/>
+            <AppenderRef ref="console"/>
+            <AppenderRef ref="file" level="all"/>
         </Root>
     </Loggers>
 </Configuration>
