@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestCustomIntegerNumber {
+public class TestCustomNumber {
     private CustomNumber[] customNumbers;
     private final NumberExtraction numberExtraction = new NumberExtraction();
     private final NumberOperation numberOperation = new NumberOperation();
