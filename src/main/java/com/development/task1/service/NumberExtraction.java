@@ -1,6 +1,7 @@
 package com.development.task1.service;
 
 import com.development.task1.entity.CustomNumber;
+import com.development.task1.factory.NumberFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,8 +12,10 @@ import java.io.IOException;
 public class NumberExtraction {
     private static final String number = "[0-9]+";
     private static final Logger logger = LogManager.getLogger(CustomNumber.class.getSimpleName());
+    private final NumberFactory numberFactory;
 
     public NumberExtraction() {
+        numberFactory = new NumberFactory();
     }
 
     public CustomNumber[] getFromFile() {
@@ -40,7 +43,7 @@ public class NumberExtraction {
             if (!value.matches(number)) {
                 return new CustomNumber[0];
             } else {
-                CustomNumber customNumber = new CustomNumber(value);
+                CustomNumber customNumber = numberFactory.createNumber(value);
                 customNumbers[flag++] = customNumber;
             }
         }
