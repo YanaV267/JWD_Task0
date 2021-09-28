@@ -25,17 +25,16 @@ public class CustomIntegerNumber extends CustomNumber{
 
     @Override
     public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (o == null || getClass() != o.getClass())
-            return false;
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
         CustomIntegerNumber that = (CustomIntegerNumber) o;
-        return value == that.value;
+        return that.value == value;
     }
 
     @Override
     public int hashCode() {
-        int result = 1;
+        int result = super.hashCode();
         result = result * 31 + value;
         return result;
     }
@@ -44,7 +43,8 @@ public class CustomIntegerNumber extends CustomNumber{
     public String toString() {
         Class<?> currentClass = this.getClass();
         return currentClass.getSimpleName() + "{" +
-                "value=" + value +
+                "type=" + super.getType() +
+                ", value=" + value +
                 '}';
     }
 }

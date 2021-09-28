@@ -25,17 +25,16 @@ public class CustomDoubleNumber extends CustomNumber{
 
     @Override
     public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (o == null || getClass() != o.getClass())
-            return false;
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
         CustomDoubleNumber that = (CustomDoubleNumber) o;
-        return value == that.value;
+        return that.value == value;
     }
 
     @Override
     public int hashCode() {
-        int result = 1;
+        int result = super.hashCode();
         result = (int) (result * 31 + value);
         return result;
     }
@@ -44,7 +43,9 @@ public class CustomDoubleNumber extends CustomNumber{
     public String toString() {
         Class<?> currentClass = this.getClass();
         return currentClass.getSimpleName() + "{" +
-                "value=" + value +
+                "type=" + super.getType() +
+                ", value=" + value +
                 '}';
     }
+
 }

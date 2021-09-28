@@ -1,6 +1,8 @@
 package com.development.task1.entity;
 
-public abstract class CustomNumber {
+import java.io.Serializable;
+
+public abstract class CustomNumber implements Serializable {
     private NumberType type;
 
     public NumberType getType() {
