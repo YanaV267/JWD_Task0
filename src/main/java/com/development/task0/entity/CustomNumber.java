@@ -33,9 +33,7 @@ public class CustomNumber {
 
     @Override
     public int hashCode() {
-        int result = super.hashCode();
-        result = (int) (result * 31 + value);
-        return result;
+        return (int) (31 + value);
     }
 
     @Override
