@@ -13,9 +13,10 @@ public class NumberReaderTest {
 
     @Test
     public void readNumbers() throws CustomNumberException {
+        String expected = "18";
         NumberReaderImpl numberReader = new NumberReaderImpl();
         String[] readNumbers = numberReader.readNumbers("src/main/resources/data/numbers.txt");
-        Assert.assertEquals(readNumbers[0], "18");
+        Assert.assertEquals(readNumbers[0], expected);
         LOGGER.info("тест извлечения чисел из файла прошёл успешно");
     }
 }

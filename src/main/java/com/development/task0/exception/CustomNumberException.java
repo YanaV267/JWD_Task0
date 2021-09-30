@@ -1,6 +1,6 @@
 package com.development.task0.exception;
 
-public class CustomNumberException extends Exception{
+public class CustomNumberException extends Exception {
     public CustomNumberException() {
     }
 

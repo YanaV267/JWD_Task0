@@ -8,15 +8,16 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class NumberParserTest{
+public class NumberParserTest {
     static final Logger LOGGER = LogManager.getLogger(CustomNumber.class.getSimpleName());
 
     @Test
     public void parseNumber() throws CustomNumberException {
+        double expected = 0.5;
         String[] numbers = {"15", "0..5", "-3"};
         NumberParserImpl numberParser = new NumberParserImpl();
         CustomNumber[] customNumbers = numberParser.parseNumber(numbers);
-        Assert.assertEquals(customNumbers[1].getValue(), 0.5);
+        Assert.assertEquals(customNumbers[1].getValue(), expected);
         LOGGER.info("тест извлечения чисел из файла прошёл успешно");
     }
 }

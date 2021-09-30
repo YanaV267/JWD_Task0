@@ -12,9 +12,10 @@ public class NumberCreatorTest {
 
     @Test
     public void createNumber() {
+        double expected = 15;
         NumberCreatorImpl numberCreator = new NumberCreatorImpl();
         CustomNumber number = numberCreator.createNumber(15);
-        Assert.assertEquals(number.getValue(), 15.0);
+        Assert.assertEquals(number.getValue(), expected);
         LOGGER.info("тест создания объекта числа прошёл успешно");
     }
 }

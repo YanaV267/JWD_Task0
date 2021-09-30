@@ -11,7 +11,7 @@ public class NumberParserImpl implements NumberParser {
 
     @Override
     public CustomNumber[] parseNumber(String[] numberValues) throws CustomNumberException {
-        if(!NumberValidator.checkSize(numberValues)){
+        if (!NumberValidator.checkSize(numberValues)) {
             throw new CustomNumberException("Данных в файле нет");
         }
         CustomNumber[] customNumbers = new CustomNumber[numberValues.length];

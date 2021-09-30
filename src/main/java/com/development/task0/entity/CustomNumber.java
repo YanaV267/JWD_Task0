@@ -1,6 +1,6 @@
 package com.development.task0.entity;
 
-public class CustomNumber{
+public class CustomNumber {
     private double value;
 
     public CustomNumber() {

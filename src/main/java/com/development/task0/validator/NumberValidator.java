@@ -10,11 +10,11 @@ public class NumberValidator {
     static final Logger LOGGER = LogManager.getLogger(CustomNumber.class.getSimpleName());
     private static final String NUMBER_REGEX = "[-]?\\d+\\.?\\d*";
 
-    private NumberValidator(){
+    private NumberValidator() {
     }
 
     public static boolean checkNumberValue(String numberValue) {
-        if (numberValue.matches(NUMBER_REGEX)){
+        if (numberValue.matches(NUMBER_REGEX)) {
             return true;
         } else {
             LOGGER.error("неверный формат данных {}", numberValue);

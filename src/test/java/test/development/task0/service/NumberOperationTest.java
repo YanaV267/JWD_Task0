@@ -28,33 +28,33 @@ public class NumberOperationTest {
 
     @Test
     public void addition() {
-        double assigned = numberOperation.addition(customNumbers);
         double expected = 12;
+        double assigned = numberOperation.addition(customNumbers);
         Assert.assertEquals(assigned, expected);
         LOGGER.info("тест суммирования чисел прошёл успешно");
     }
 
     @Test
     public void subtraction() {
-        double assigned = numberOperation.subtraction(customNumbers);
         double expected = 24;
+        double assigned = numberOperation.subtraction(customNumbers);
         Assert.assertEquals(assigned, expected);
         LOGGER.info("тест вычитания из первого полученного числа остальных чисел прошёл успешно");
     }
 
     @Test
     public void multiplication() {
-        double assigned = numberOperation.multiplication(customNumbers);
         double expected = 216;
+        double assigned = numberOperation.multiplication(customNumbers);
         Assert.assertEquals(assigned, expected);
         LOGGER.info("тест перемножения чисел прошёл успешно");
     }
 
     @Test
     public void division() {
-        double assigned = numberOperation.division(customNumbers);
         double expected = 2;
-        Assert.assertEquals(assigned, expected);
+        double actual = numberOperation.division(customNumbers);
+        Assert.assertEquals(actual, expected);
         LOGGER.info("тест деления первого полученного числа на остальные числа прошёл успешно");
     }
 }
