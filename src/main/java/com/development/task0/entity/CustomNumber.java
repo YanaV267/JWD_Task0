@@ -1,18 +1,14 @@
-package com.development.task1.entity;
+package com.development.task0.entity;
 
-public class CustomDoubleNumber extends CustomNumber{
+public class CustomNumber{
     private double value;
 
-    public CustomDoubleNumber() {
+    public CustomNumber() {
 
     }
 
-    public CustomDoubleNumber(double value) {
+    public CustomNumber(double value) {
         this.value = value;
-    }
-
-    public CustomDoubleNumber(String value) {
-        this.value = Double.parseDouble(value);
     }
 
     public double getValue() {
@@ -25,10 +21,13 @@ public class CustomDoubleNumber extends CustomNumber{
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-        CustomDoubleNumber that = (CustomDoubleNumber) o;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        CustomNumber that = (CustomNumber) o;
         return that.value == value;
     }
 
@@ -43,8 +42,7 @@ public class CustomDoubleNumber extends CustomNumber{
     public String toString() {
         Class<?> currentClass = this.getClass();
         return currentClass.getSimpleName() + "{" +
-                "type=" + super.getType() +
-                ", value=" + value +
+                "value=" + value +
                 '}';
     }
 

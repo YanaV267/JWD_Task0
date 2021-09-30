@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration monitorInterval="60">
-    <Properties>
-        <Property name="log-path">logs</Property>
-        <Property name="archive">${log-path}/archive</Property>
-    </Properties>
+<Configuration monitorInterval="1000">
     <Appenders>
         <Console name="console" target="SYSTEM_OUT">
             <PatternLayout>
                 <pattern>
-                    [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t]   %c{1} - %msg%n
+                    [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS}   %c{1} - %msg%n
                 </pattern>>
             </PatternLayout>
         </Console>
-        <File name="file" fileName="${log-path}/logFile.log" >
+        <File name="file" fileName="logs/logFile.log" >
             <PatternLayout>
                 <pattern>
                     [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t]   %c{1} - %msg%n
