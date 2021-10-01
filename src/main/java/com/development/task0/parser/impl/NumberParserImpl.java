@@ -6,22 +6,24 @@ import com.development.task0.exception.CustomNumberException;
 import com.development.task0.parser.NumberParser;
 import com.development.task0.validator.NumberValidator;
 
+import java.util.Arrays;
+
 public class NumberParserImpl implements NumberParser {
     private final NumberCreatorImpl numberCreator = new NumberCreatorImpl();
 
     @Override
     public CustomNumber[] parseNumber(String[] numberValues) throws CustomNumberException {
-        if (!NumberValidator.checkSize(numberValues)) {
-            throw new CustomNumberException("Данных в файле нет");
+        if (numberValues == null) {
+            throw new CustomNumberException("File is empty. No data was found in it.");
         }
-        CustomNumber[] customNumbers = new CustomNumber[numberValues.length];
+        CustomNumber[] tempCustomNumbers = new CustomNumber[numberValues.length];
         int index = 0;
         for (String numberValue : numberValues) {
             if (NumberValidator.checkNumberValue(numberValue)) {
                 double value = Double.parseDouble(numberValue);
-                customNumbers[index++] = numberCreator.createNumber(value);
+                tempCustomNumbers[index++] = numberCreator.createNumber(value);
             }
         }
-        return customNumbers;
+        return Arrays.copyOf(tempCustomNumbers, index);
     }
 }

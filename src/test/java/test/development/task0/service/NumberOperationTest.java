@@ -8,6 +8,7 @@ import com.development.task0.service.impl.NumberOperationImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class NumberOperationTest {
@@ -15,14 +16,15 @@ public class NumberOperationTest {
     private final NumberOperationImpl numberOperation = new NumberOperationImpl();
     private CustomNumber[] customNumbers;
 
-    {
+    @BeforeTest
+    public void init(){
         NumberReaderImpl numberReader = new NumberReaderImpl();
         NumberParserImpl numberParser = new NumberParserImpl();
         try {
-            String[] readNumbers = numberReader.readNumbers("src/main/resources/data/numbers.txt");
+            String[] readNumbers = numberReader.readNumbers("data/numbers.txt");
             customNumbers = numberParser.parseNumber(readNumbers);
         } catch (CustomNumberException exception) {
-            LOGGER.error("ошибка извлечения чисел " + exception.getMessage());
+            LOGGER.error("error of extracting numbers " + exception.getMessage());
         }
     }
 
@@ -31,7 +33,6 @@ public class NumberOperationTest {
         double expected = 12;
         double assigned = numberOperation.addition(customNumbers);
         Assert.assertEquals(assigned, expected);
-        LOGGER.info("тест суммирования чисел прошёл успешно");
     }
 
     @Test
@@ -39,7 +40,6 @@ public class NumberOperationTest {
         double expected = 24;
         double assigned = numberOperation.subtraction(customNumbers);
         Assert.assertEquals(assigned, expected);
-        LOGGER.info("тест вычитания из первого полученного числа остальных чисел прошёл успешно");
     }
 
     @Test
@@ -47,7 +47,6 @@ public class NumberOperationTest {
         double expected = 216;
         double assigned = numberOperation.multiplication(customNumbers);
         Assert.assertEquals(assigned, expected);
-        LOGGER.info("тест перемножения чисел прошёл успешно");
     }
 
     @Test
@@ -55,6 +54,5 @@ public class NumberOperationTest {
         double expected = 2;
         double actual = numberOperation.division(customNumbers);
         Assert.assertEquals(actual, expected);
-        LOGGER.info("тест деления первого полученного числа на остальные числа прошёл успешно");
     }
 }
