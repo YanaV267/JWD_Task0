@@ -2,7 +2,6 @@ package com.development.task0.reader.impl;
 
 import com.development.task0.exception.CustomNumberException;
 import com.development.task0.reader.NumberReader;
-import com.development.task0.validator.NumberValidator;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

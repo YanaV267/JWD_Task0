@@ -4,7 +4,7 @@ import com.development.task0.creator.impl.NumberCreatorImpl;
 import com.development.task0.entity.CustomNumber;
 import com.development.task0.exception.CustomNumberException;
 import com.development.task0.parser.NumberParser;
-import com.development.task0.validator.NumberValidator;
+import com.development.task0.validator.impl.NumberValidatorImpl;
 
 import java.util.Arrays;
 
@@ -16,10 +16,11 @@ public class NumberParserImpl implements NumberParser {
         if (numberValues == null) {
             throw new CustomNumberException("File is empty. No data was found in it.");
         }
+        NumberValidatorImpl numberValidator = new NumberValidatorImpl();
         CustomNumber[] tempCustomNumbers = new CustomNumber[numberValues.length];
         int index = 0;
         for (String numberValue : numberValues) {
-            if (NumberValidator.checkNumberValue(numberValue)) {
+            if (numberValidator.checkNumberValue(numberValue)) {
                 double value = Double.parseDouble(numberValue);
                 tempCustomNumbers[index++] = numberCreator.createNumber(value);
             }
