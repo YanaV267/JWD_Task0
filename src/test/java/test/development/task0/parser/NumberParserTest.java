@@ -14,6 +14,6 @@ public class NumberParserTest {
         String[] numbers = {"15", "0..5", "-3"};
         NumberParserImpl numberParser = new NumberParserImpl();
         CustomNumber[] customNumbers = numberParser.parseNumber(numbers);
-        Assert.assertEquals(customNumbers[1].getValue(), expected, "invalid parsing of numbers");
+        Assert.assertEquals(customNumbers[1].getValue(), expected, "numbers parsing is invalid");
     }
 }

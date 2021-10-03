@@ -12,6 +12,6 @@ public class NumberCreatorTest {
         double expected = 15;
         NumberCreatorImpl numberCreator = new NumberCreatorImpl();
         CustomNumber number = numberCreator.createNumber(15);
-        Assert.assertEquals(number.getValue(), expected, "invalid creating of number object");
+        Assert.assertEquals(number.getValue(), expected, "number object creating is invalid");
     }
 }

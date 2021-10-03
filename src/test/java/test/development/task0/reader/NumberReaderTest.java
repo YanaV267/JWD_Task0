@@ -12,6 +12,6 @@ public class NumberReaderTest {
         String expected = "18";
         NumberReaderImpl numberReader = new NumberReaderImpl();
         String[] readNumbers = numberReader.readNumbers("data/numbers.txt");
-        Assert.assertEquals(readNumbers[0], expected, "invalid reading of numbers");
+        Assert.assertEquals(readNumbers[0], expected, "numbers reading is invalid ");
     }
 }

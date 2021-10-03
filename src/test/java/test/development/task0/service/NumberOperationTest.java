@@ -32,27 +32,27 @@ public class NumberOperationTest {
     public void addition() {
         double expected = 12;
         double assigned = numberOperation.addition(customNumbers);
-        Assert.assertEquals(assigned, expected, "invalid addition of numbers");
+        Assert.assertEquals(assigned, expected, "numbers addition is invalid");
     }
 
     @Test
     public void subtraction() {
         double expected = 24;
         double assigned = numberOperation.subtraction(customNumbers);
-        Assert.assertEquals(assigned, expected, "invalid subtraction of numbers");
+        Assert.assertEquals(assigned, expected, "numbers subtraction is invalid");
     }
 
     @Test
     public void multiplication() {
         double expected = 216;
         double assigned = numberOperation.multiplication(customNumbers);
-        Assert.assertEquals(assigned, expected, "invalid multiplication of numbers");
+        Assert.assertEquals(assigned, expected, "numbers multiplication is invalid ");
     }
 
     @Test
     public void division() {
         double expected = 2;
         double actual = numberOperation.division(customNumbers);
-        Assert.assertEquals(actual, expected, "invalid division of numbers");
+        Assert.assertEquals(actual, expected, " numbers division is invalid");
     }
 }
